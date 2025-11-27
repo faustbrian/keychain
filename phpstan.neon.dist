@@ -1,0 +1,11 @@
+parameters:
+    level: max
+    paths:
+        - src
+
+    reportUnmatchedIgnoredErrors: true
+    treatPhpDocTypesAsCertain: false
+
+    ignoreErrors:
+        # Trait is used by models that implement HasApiTokens contract
+        - '#Trait .* is used zero times and is not analysed#'
